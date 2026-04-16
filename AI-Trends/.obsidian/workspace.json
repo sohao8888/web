@@ -1,0 +1,245 @@
+{
+  "main": {
+    "id": "f3b05ba24220fd6f",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0a768a65c77506b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b09b1befd3eb84e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04_Companies/openai/OpenAI.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OpenAI"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dea5c97bc25c9027",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0c7982cfeb36f32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "99_Dashboard/AI趋势总览.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AI趋势总览"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f7810c2f8412c799",
+    "type": "split",
+    "children": [
+      {
+        "id": "62ef907398d421b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aca4f83b38d4a3d0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "6cdeae48e63ac749",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "赵",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "8d599a6eb3cfc311",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "00eebb53361fa7a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d54dfd846f071d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7d50f2068bfec4f9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "04_Companies/openai/OpenAI.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "OpenAI 的反向链接列表"
+            }
+          },
+          {
+            "id": "02fb5e469f4a887c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "04_Companies/openai/OpenAI.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "OpenAI 的出链列表"
+            }
+          },
+          {
+            "id": "096b0a399f150b37",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e297cdf651604f8e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "719f8dea3964bfcf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "04_Companies/openai/OpenAI.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "OpenAI 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "b09b1befd3eb84e0",
+  "lastOpenFiles": [
+    "99_Dashboard/AI趋势总览.md",
+    "07_Daily/2026-04-16 AI趋势日报.md",
+    "2026-04-16 AI趋势日报.md",
+    "07_Daily/2026-04-15 AI趋势日报.md",
+    "04_Companies/openai/OpenAI.md",
+    "04_Companies/openai",
+    "scripts/__pycache__/generate_daily.cpython-312.pyc",
+    "scripts/__pycache__",
+    "scripts/generate_daily.py",
+    "scripts",
+    "02_Signals/2026-04-13+S23+技术监管叙事仍会影响高风险赛道的信任与估值.md",
+    "02_Signals/2026-04-12+S09+技术监管叙事仍会影响高风险赛道的信任与估值.md",
+    "02_Signals/2026-04-12+S05+OpenAI 的治理信任将持续影响产品与资本节奏.md",
+    "01_Sources/2026-04-12+Sam Altman在OpenAI面临的信任问题 《纽约客》广播节目.md",
+    "AGENTS.md",
+    "01_Sources/2026-04-12+Vercel CEO：我们70_的流量现在来自AI代理，“谁也没料到” Anthropic、OpenClaw、OpenAI.md",
+    "监管.md",
+    "加密货币.md",
+    "OpenAI.md",
+    "Anthropic.md",
+    "90_Templates/daily-template.md",
+    "表格信息.base",
+    "02_Signals/2026-04-12+S01+模型连续自治时间正在快速拉长.md",
+    "07_Daily",
+    "90_Templates/source-template.md",
+    "90_Templates/signal-template.md",
+    "90_Templates/company-template.md",
+    "02_Signals/2026-04-12+S02+头部模型公司正被按超大收入平台来定价.md",
+    "01_Sources/2026-04-12+来自 NVIDIA 研究院的洞见 NVIDIA GTC.md",
+    "02_Signals/2026-04-15+S35+语音正在重新成为代理时代的关键交互入口.md",
+    "02_Signals/2026-04-15+S34+增长团队将越来越面向代理而不是纯人类流量优化.md",
+    "02_Signals/2026-04-15+S33+AI 产业化速度将受制于电力、矿产和制造能力.md",
+    "02_Signals/2026-04-15+S32+AI 创业环境会更奖励高质量判断而不是流程堆叠.md",
+    "99_Dashboard",
+    "90_Templates",
+    "06_Monthly"
+  ]
+}

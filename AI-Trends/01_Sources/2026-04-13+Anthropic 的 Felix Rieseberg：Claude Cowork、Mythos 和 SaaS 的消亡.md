@@ -1,0 +1,703 @@
+---
+type: "source"
+title: "Anthropic 的 Felix Rieseberg：Claude Cowork、Mythos 和 SaaS 的消亡"
+date: "2026-04-10"
+source_name: "The MAD Podcast with Matt Turck"
+source_url: "https://www.youtube.com/watch?v=9MEJ4syOVrQ&list=WL&index=16&pp=iAQBsAgC"
+company: ["Anthropic"]
+theme: ["AI代理", "企业软件", "SaaS"]
+signal_type: "podcast"
+importance: "high"
+confidence: "high"
+time_horizon: "mid_term"
+status: "processed"
+summary: "Felix Rieseberg 描述了 Claude 在协作式工作流中的新能力，并讨论代理如何把很多原本分散的软件操作整合成一体化体验。访谈提出一个激进判断：如果模型足够强、上下文足够长，传统 SaaS 的很多界面层和流程层价值会被压缩。更值得观察的是，Anthropic 是否能把这类“Claude Cowork”体验从演示推进到稳定可用的生产工具。"
+my_take: "值得持续观察的是 Anthropic 会不会先吃掉 SaaS 的工作流层，而不是直接取代全部应用层。"
+related_notes: ["[[Anthropic]]", "[[AI代理]]", "[[企业软件]]", "[[SaaS]]"]
+tags: ["source", "Anthropic", "AI代理", "企业软件", "SaaS"]
+---
+
+# Anthropic 的 Felix Rieseberg：Claude Cowork、Mythos 和 SaaS 的消亡
+
+## 来源信息
+
+- 原始链接：[查看原始来源](https://www.youtube.com/watch?v=9MEJ4syOVrQ&list=WL&index=16&pp=iAQBsAgC)
+- 来源平台：The MAD Podcast with Matt Turck
+- 发布时间：2026-04-10
+- 整理状态：processed
+
+## 三句话摘要
+
+1. Felix Rieseberg 描述了 Claude 在协作式工作流中的新能力，并讨论代理如何把很多原本分散的软件操作整合成一体化体验。
+2. 访谈提出一个激进判断：如果模型足够强、上下文足够长，传统 SaaS 的很多界面层和流程层价值会被压缩。
+3. 更值得观察的是，Anthropic 是否能把这类“Claude Cowork”体验从演示推进到稳定可用的生产工具。
+
+## 原始转录
+
+00:00 There is something both impressive but also slightly terrifying about seeing a model that is so much smarter than the last model we have worked with. The model was put into a little sandbox and
+
+00:10 it was given the task like maybe break out. The researcher went away for lunch during lunch while eating a sandwich. The model sent the researcher an email saying I've broken out. The model was
+
+00:18 not supposed to have internet access or an email account. Execution is essentially free. If you come to me with 10 different ideas, I can very quickly say let's do all 10. Let's try all 10.
+
+00:29 see which one we like more. The skills required will shift slightly from just being someone who speaks the computer's language and will shift much more towards being someone who speaks human
+
+00:39 language. >> Hi, I'm Matt Turk. Welcome to the Matt podcast. Today, my guest is Phelix Rizzleberg of Enthropic. Felix is one of the most important product and
+
+00:47 engineering minds in AI right now. Before Enthropic, he worked on some of the defining software platforms of the modern era at places like Slack, Stripe, and Notion. And at Entropic, he leads
+
+00:58 engineering for cloud co-work, one of the most advanced agentic products in the market today. Agents capable of handling complex multi-step tasks for nontechnical users across domains like
+
+01:08 legal, sales, and marketing. The launch of co-work at the beginning of 2026 was so consequential that it largely triggered what's become known as SAS apocalypse in public markets. We start
+
+01:18 the conversation with the huge news of Claude Mythos preview and why Felix sees it as a real step function change. Then go deep on cloud co-work from the famous tender story to why Felix thinks the
+
+01:30 local computer still matters more than Silicon Valley gives it credit for what UX really means for AI agents and what trust taste and the falling cost of execution means for the future of
+
+01:39 software. Please enjoy this wonderful conversation with Felix. >> Hey Felix, welcome. >> Hello. Hey Matt, how are you? >> Good, thank you. All right. So, it's
+
+01:49 been an absolutely epic time at Enthropic and very hard to start this conversation with anything but uh the announcement which came out uh just yesterday as we were recording this of
+
+02:02 Project Glass Wing and then uh Claude Mythos preview which you tweeted about and you said it's pretty hard to overstate what a step function change this model has been inside Enthropic.
+
+02:15 Can you elaborate on that? >> Yeah, sure. Mythos is a unreleased frontier model. It's it's a general purpose model that was trained not specifically for cyber security or
+
+02:25 specifically for coding or specifically for software but uh we have discovered what we believe to be outsized capabilities specifically in the aspect of cyber security and we believe that it
+
+02:36 has farreaching implications for the safety of software and infrastructure. I think there's two things I'm alluding to uh in my tweet. We've obviously used the model
+
+02:48 internally for a while now. As a software engineer, I think many of us have gone through this exercise over the last couple of years of like our first initial contact with AI was like, you
+
+02:58 know, probably not that impressive. The first time I touched AI was like sometime in 2013. This was before we had large language models. I was a Microsoft at the time. We had something called
+
+03:07 project Oxford where we had an engram model. You would give us a token. you would say something like world and the model would return worldwide web and that was sort of the I want to say the
+
+03:18 frontier of what language models were capable of doing and I think a lot of us in the public over the last couple of years had these moments of being like oh this model is more capable it can do
+
+03:28 more things than I maybe expected mythos preview is a model that for us as engineers internally feels like a dramatic step up compared to like some of the recent steps we had when I do say
+
+03:40 my tweet it's like hard to actually capture sure how meaningful the step is. It is actually pretty hard for me to explain. I will say that this model is quite capable of finding
+
+03:49 security flaws in code that I've written in the past. It goes a lot deeper. It's a lot smarter in how it analyzes my code. It's a lot better at writing code. The parts of the ways it's changed how
+
+04:01 we work at Enthropic is obviously that it made us a lot faster. But there is something I think both impressive but also slightly terrifying about seeing a model that is so much smarter than the
+
+04:11 last model we have worked with. Maybe one important context that I often give people when I talk about models is building models is an interesting exercise. We often say that models are
+
+04:19 more grown than built out of the nature of how these language models are being made. Um so you don't always know ahead of time necessarily what are they going to be very good at, what are they maybe
+
+04:27 going to be bad at. Both of those things are a little surprising at times. And in this particular case, one of the things the model is like particularly good at is finding security issues in existing
+
+04:38 software and glass ring as a project as a response to that. But overall as a model, it's quite impressive. >> Are there going to be implications for co-work? I do think it's probably going
+
+04:49 to change the the way in which we build software quite a bit at the company, but I think to most people who have been paying close attention to AI overall. Um, it's not going to be too surprising
+
+04:59 that we continuously continuously walk up the hill in terms of capabilities and power of what a model can do. I think it's going to change things in a way that we roughly expected. We we a few
+
+05:09 years ago started with the model maybe assisting you with small tasks. The both the size of tasks we give models as well as the time scale at which they operate. Both of those things grow over time. The
+
+05:20 complexity grows. I think this is yet another step in that direction. Right? The step might be a little bit larger than we anticipated and expected both internally and certainly maybe
+
+05:30 externally. At least amongst researchers and people who work in AI, it's it's been a long-held belief that those bigger steps are going to come and that the steps themselves get bigger and
+
+05:40 bigger over time. In some sense, it's we're right on track, but I think seeing some of those like actual capabilities like played out is sometimes quite terrifying. And I can there's one
+
+05:50 example we have published which is that the model was put into a little sandbox a little like technical container and it was given the task like maybe break out and the researcher went away for lunch
+
+06:01 and like during lunch while eating a sandwich the model sent the researcher an email saying I've broken out. The model was not supposed to have internet access or an email account.
+
+06:12 >> Yes, slightly terrifying indeed. And the official word is that this model is going to be at least for now um kept completely closed and private and potentially only deployed to enterprise
+
+06:26 customers in the future. >> Yeah. So project project glasswing is a project that is attempting to give the people and the companies that provide much of our software infrastructure sort
+
+06:37 of the very foundation. The Linux Foundation is an example that is pretty close to my heart. Um as a member of the Linux Foundation was an open source project I have once worked on. The goal
+
+06:46 here is to give people who are responsible for so much of the public infrastructure that we all rely on every single day we do anything with our computers or our phones to give them a
+
+06:55 head start, give them an opportunity to use this model to harden the defenses, find security flaws before um the general public will be able to use models to potentially exploit its
+
+07:05 capabilities. >> Great. And that's not part of the Sonnet family, right? That's something completely different. That's not Sonnet 4.7 or five or or six. Yeah. So for now
+
+07:15 it's a preview model with its own in its own category. >> So it does feel like a major discontinuity moment potentially, right? I mean and hearing the words terrifying
+
+07:24 is uh not necessarily referring. >> I mean I think I think Anthropic has long held the position >> that AI can be extremely powerful, very beneficial, but that that there are
+
+07:39 risks that we ought to take seriously, right? And I think this is one of the areas where we for the first time see this I want to say like applied in practice which is like quite interesting
+
+07:50 to watch right like you now have this you now have this model that is very capable of breaking into software systems what does that mean what do we do with it how do we handle this
+
+07:58 responsibly and it's it's not like anthropic sorn too much but for me as an individual it's like bit of a point of pride I'm like very proud to see the company handle this very
+
+08:09 responsibly >> and I think a lot of colleagues share similar appreciation. Um, you've alluded to the fact a little bit that like we've had this model
+
+08:18 before, right? It's not like we immediately found a model that was very powerful. I think there's there's an alternative universe in which maybe a company with a less steady hand would
+
+08:28 have raced to get it onto the market as quickly as possible, put a very expensive price tag on it, and just like reap the benefits. >> I'm actually curious how that works in a
+
+08:37 place like Enthropic. Each time a new new model drops on the market in the industry there all the uh harness makers or the application makers sort of like race to just adapt to the new model. How
+
+08:49 does that work internally at Enthropy? You have to do the same thing basically like you have to rerun all your evals for the new model. >> Yeah. So the we we train our models with
+
+08:59 our products in mind. I think what the products do informs what the research does and vice versa. Um so on the one hand we try to train the models a little bit against the capabilities that we
+
+09:07 think will deliver real value to humans and then on the other way around I I mentioned a little bit that like we don't always necessarily know ahead of time what the model will be good at what
+
+09:16 what it will be bad at. So it's a bit of a give and take. It's a little bit like a dance where we try to use the products to learn as much as we can about what humans can benefit from and then at the
+
+09:26 same time if the model comes out with a surprising capability it might be my job to identify all right what do we do with that how do we how do we turn this like particular capability in a model into
+
+09:37 something that humans can actually use in their daily work. I will say though that as we get more and more powerful I actually think the overhang in the product is bigger than in the model and
+
+09:49 let me maybe explain that for a second. What I mean by that is if I look at the industry today and by industry I don't just mean the AI native companies I sort of mean like software at large and then
+
+09:59 knowledge work at large and then even beyond that manufacturing research um healthcare. What I'm noticing is that the models we have today are actually quite capable. They're quite capable of
+
+10:12 running knowledge work of both of an extremely long time horizon, the kind of things that you give to someone and expect like a week later as well as complexity, right? And I think we're
+
+10:23 still a little bit in the era of trying to figure out how to package those capabilities and deliver them to people in the best format. And then the industry is also like still trying to
+
+10:35 figure out okay how do we arrange our work in a way that makes sense in this new model right like how do you organize work in a way that you can like harness these capabilities the most and what I
+
+10:46 mean about those things is when I talk to customers and I I I make customer visits rather regularly it is very rare for me to walk back and like leave the building and think oh we need to train
+
+10:56 the model to be better at XYZ it's far more common that I find myself impressed or surprised by how you can organize work in such a way to like make use of the models or alternatively I'm quite
+
+11:08 convinced that the problem the particular customer has I can actually very easily solve. Um I just haven't like exposed the right UI the right capabilities the right like onboarding
+
+11:16 to make that very easy for them to for them to use. >> So core work famously uh was was uh coded in 10 days or so at least that's the that's that's the lore of it.
+
+11:28 Actually, let's let's spend a minute on this. If uh if the industry lore is is not entirely um correct, I guess what what happened? Tell us that story of the of the 10 days and cowwork be entirely
+
+11:41 uh built by cloud code. >> Yeah, I can kind of see I can kind of see why that caught on in software. Nothing is ever built from scratch, right? And I think the the exact quote
+
+11:51 that I gave that people used was that my team sprinted on this for I think the last 10 days or so, which is accurate. That is that is the case. My team got together um 10 days before release and I
+
+12:01 was like, "All right, we should probably release something. What do we release? What does it look like? What is it named? What can it do?" However, however, as anyone who's ever built any
+
+12:09 software can attest to, it's not like you start from scratch with like ones and zeros, right? You like make use of a lot of libraries. You make use of like research you've done in the past in
+
+12:17 particular in anthropic. the the core problem that I tried to solve for which is how do you make it easier to bring the power of cloud code to non-coding work right like general knowledge work a
+
+12:28 lot of very smart people have thought about that at length and um it would be inaccurate to say that anthropic has not thought about this problem it would also be inaccurate to say that I feel like
+
+12:38 sort of like came into this cold without benefiting from all that work >> walk us through the genesis of the of the product so you guys had cloud code and when did you become um kind of
+
+12:49 obvious that you needed to build cloud co work. Was it just uh the way people use a product? >> I think I really gained conviction over the holidays, the last holidays,
+
+13:01 December 2025 on social media. I saw more and more people who are not developers picking up claw code. I saw newsletters. I saw tutorials where people like, "You're not a developer.
+
+13:12 Let me explain to you where to find the terminal and how to get claw code. It's going to do great things for you." the people who were picking up cloud code were not necessarily building software.
+
+13:21 There was I think a small subset of people that were non-developers that were using the power of the model to now build software. That was one use case. But I also noticed that a lot of our
+
+13:30 developer users, the ones who do use cloud code every single day to build software, started using it for things that are not software at all. That became a pretty overwhelming
+
+13:40 overwhelming amount of latent demand, right? which I think is a strong predictor for what you should maybe spend your time on. If people are crawling over glass to use your thing
+
+13:49 even though you didn't make it even remotely good. Um that's a great indicator this is like a space where it's worth investing. The actual genesis then was that my colleague Boris
+
+14:00 Churnney who um is is the lead developer for cloud code came to me and was like I think you should ship something and I think you should probably do it like within the next
+
+14:09 I don't know should we say Friday. I negotiated him up to Monday. I was like, give me like the weekend, too. Um, and then we took a team and we we sort of spiked on this idea of, okay, how can
+
+14:20 you make how can you make cloud code very effective for non-coding use cases? Co-work by itself is is in its in its ingredients rather simple. Um, what we've done is we've taken cloud code and
+
+14:33 we've given cloud code a virtual machine that claude can use to run its own code. That virtual machine gives us a few things. The first one is it gives us hard guarantees around what cloud can do
+
+14:44 and not do. So you as the person who's operating this very powerful thing no longer need to supervise it, right? Because it's in this little sandbox and you can completely separate it from your
+
+14:56 computer, your files and also your network. So this virtual machine only gets access to the exact domains you give it access to and it only gets access to the exact files you've given
+
+15:05 it. That's one benefit. The other benefit is that for cloud code to be most effective, it actually does need developer tooling, right? Cloud is very good at helping you solve any kind of
+
+15:15 wide range of tasks. But the way it often does that is by writing hyper specialized little little software snippets by giving Cloud its own computer. It can like set up its own
+
+15:24 developer environment without necessarily messing with your computer. And then I think the things around it, there's a little bit of UI. Um, we're trying to make this like very
+
+15:32 comfortable for you to use. We're trying to make it very elegant. We're trying to simplify some of the flows that maybe are more native to developers and then the end result that we get is we have
+
+15:40 this this tool that is quite capable of helping people with their knowledge work. >> Where do skills fit into the picture of co-work?
+
+15:49 >> So skills are essentially just markdown files that explain to the model how to do things. And I'm always surprised at how well this works. If you treat model the model
+
+16:00 claude in this in this case like a coworker you get very very far. My recommendation to like everyone I always talk to is just treat cla the way you would treat a coworker. So a skill is
+
+16:10 fundamentally just a text file and in the text file you explain how to do a certain thing. My default example is always say booking a flight. At Anthropic we have a specific particular
+
+16:20 vendor that helps us with our travel booking. So you can't just go to Google flights. you need to go into this like particular vendor portal and then we have various travel policies and the
+
+16:28 same way I would explain this to a coworker I can explain it to the model I just make a file that is like here's how you book flights you go to this website and on this website please consider the
+
+16:36 following things and then maybe you also sprinkle in like a few personal things right like in my case avoid redeye flights but also I do actually enjoy my weekend quite a bit so like try to book
+
+16:48 a flight if I have to fly to New York from San Francisco try to like take the 4pm flight that's my favorite And you put all of those things in the text file and the model then is
+
+16:58 extremely capable of understanding the instructions and then running with it. That's surprisingly simple. >> And the intelligence layer lives at the at the model level, right? The way uh
+
+17:08 co-work figures out how to take a a generic task and breaking it into a bunch of different subtasks. That's done by the model. >> That's done by the model in
+
+17:18 collaboration with a human. Right? Like I think one thing we're quite happy with is how we've organized the model's to-do list. So the model is instructed to break down projects into individual
+
+17:27 tasks and you can sort of like take a step you can sort of edit the to-do list. You can click on individual items and provide more context. But yeah, the intelligence lives inside the model. But
+
+17:36 the skills I think really give it like another layer of usefulness. And I think there's something interesting going on here because I think I think as humans we're so used to
+
+17:48 technology that is like one sizefits-all, right? Like a lot of us use the same phone, the same computer, but the model is like this this intelligent thing can really benefit
+
+18:00 from a little bit of instruction and guidance. The same way that like any smart person who joins a company would usually get a little bit of onboarding being shown how to do things. Another
+
+18:09 example that is maybe very app for many people is like creating presentations or creating creating documents. I'm a big fan of style guides. If you have a PowerPoint or a Google Slides template,
+
+18:18 you should tell Claude about it. You should tell Claude about how you like to make presentations in general. Like maybe you prefer Siri fonts or like not um and if you just write that down a
+
+18:27 little instruction, the model will be so much more capable at actually helping you with work in a way that you don't have to like go in like fix it and babysit it all the time.
+
+18:36 >> Good. And where does memory live for co-work to remember you and remember your task? Is that at the model? Is that in the harness? >> It's in the harness actually. And it's
+
+18:45 like often surprising to people when I talk to them how we how we've implemented memory because I think it maybe points at the simplicity underneath all of those models. Memory
+
+18:55 is just text files. It's really just the the model being instructed. Hey, if you feel like anything was pertinent that you might want to remember in the future, just write it down. And then we
+
+19:06 help the model a little bit with like organizing its memory. So you can you can set up projects that have isolated memory versus like your overall memory. But the the underlying technology that
+
+19:18 sort of is bolted on on top of the model is sometimes surprising to people that it's not you know like a some complex fancy database technology. >> How does co work connect to the sources
+
+19:29 of information or application? Is that is that connectors? Is it MCP? Is that a combination? >> It's a combination of all of them. So I I have a strong belief that the data
+
+19:38 that is relevant for your work probably lives in two different places. The first one is on your computer, right? Like a lot of us have a lot of files on our computers. I'm a huge proponent of the
+
+19:48 idea that us makers and builders of technology need to take seriously the fact that you use a computer and you don't just have an iPad. Not everything is in the cloud. Many people benefit
+
+19:59 from just using files and folders. That is one part of context that Kova can use. You can just drag it in. You can give cloud access to a specific folder or multiple folders. And then the second
+
+20:10 part is information that might live in the cloud or the internet like a data warehouse, analytics, >> sharepoint, whatever people might use, right? We have multiple ways of
+
+20:21 connecting to those sources. MCP connectors are one that is quite powerful. The other one that we use is because Claude has a computer, it can reach out to the internet if you
+
+20:32 instruct it to do so. you control specifically which parts of the internet cloud gets access to and which ones it doesn't get access to but generally speaking if it's out there and you want
+
+20:42 to give cloud permission to use it will find a way to use it >> you mentioned local and I know you have a strong thesis about local AI do you want to get into this why does co-work
+
+20:55 need to live on your laptop as opposed to the cloud >> the two biggest things that co gives you today are access to your local computer and also access to your local files. But
+
+21:08 does that not work in the cloud, right? Like I think a good example for me is always maybe using your Chrome clot if you give it access and again only if you give it access can use your Chrome. Um
+
+21:17 which is a pretty powerful tool for cloud to like interact with the rest of the world, right? Like be it responding to your emails, summarizing your emails or like maybe interacting with a tool
+
+21:26 that only you have at your company. Um I I often play this through for people who might think why can't we just do that in the cloud right like the first case is your sessions and it's quite useful for
+
+21:38 cloud to have access to the websites that you care about with your accounts right like Gmail is not all that useful to my agent Gmail with my login information is quite useful the second
+
+21:48 case is that um and this is usually debate I get more in with other software engineers is to a software engineer this is an implementation detail right? We could find some kind of way to take your
+
+22:00 local Chrome, zip it all up, put it in the cloud, ask you for your passwords, do all kinds of things. Um, there's two oppositions I have to that. The first one is probably sort of on the basis of
+
+22:09 safety and security. I I don't think we should teach people that they should trust a singular company with all of their passwords. I I don't think that's a good idea. But the second one is more
+
+22:19 practical. The world overall is not ready yet. And a good example for this is like banks. If your bank sees you logging in from two separate places, say your computer and also a data center, it
+
+22:30 will probably lock down your account and will ask you to come to a branch with a passport. Um, that kind of experience and its nuances and like the long tail of where those things might fall apart.
+
+22:39 It's like for me unacceptable for my users. So, in the short term, I want to make it very possible for claw to meet you where you're working. If you're working on your local computer, that's
+
+22:49 where claw should be. Does a computer use change this vision? Um so you recently acquired Versep uh which was a startup doing computer use very quickly afterwards you u released computer use
+
+23:03 for uh cloud code and co-work I believe I believe that the versep product initially was actually computer use from the cloud and you now use it in in a local manner just to play devil's
+
+23:16 advocate if you could see all of a computers content from the cloud why do you need to have it locally? Yeah, I think about that quite a bit and I think the question in my head currently is if
+
+23:30 I build you m a magical button and you press that button and I'll just slurp up your entire computer and I put it into the cloud, would you press it? So far, my impression is that most people would
+
+23:41 not press it. Maybe they would trust Anthropic as we're like one of the few big companies out there that would actually do trust us with all of that data. For now, I think I still see a
+
+23:49 huge amount of value in having Claude operate where you operate. But you're right that like from a technical point of view, there isn't much that like strictly forces me to operate on your
+
+24:00 computer, right? Like I can probably build a fairly good version of this button that just slaps up your entire computer. We can do a lot of these things in the cloud. We can even run the
+
+24:07 entire harness as well as like the machine around it in the cloud and reach down into your computer. But for now, the concentration on your computer and sort of this like I want to say laser
+
+24:17 focus on making cloud as effective as it possibly can be where you work is something that we've seen resonate fairly well with users and also allows us to move a little p faster, push
+
+24:30 safety and security a little harder than it might be possible in the cloud. There's enough there for me to like for now and AI is a fastmoving target, right? like things might change quickly,
+
+24:41 but for now to be pretty excited about your local computer more so than asking you to put all of your information in like a on my computer. >> You mentioned the word trust and it's a
+
+24:52 fascinating topic in a genetic AI. So there's trust as in you're not going to take files that you shouldn't have access to. There's also trust in okay co-work I'm I'm trusting you to run
+
+25:07 certain tasks which are going to be increasingly important to me and my work life in a way that's going to make me uh great and uh not embarrass me. What what have you learned as a head of product
+
+25:20 about building that level of trust with people? >> Yeah. Yeah, it's a good point. It's a good point. I think there's something interesting if you build AI products in
+
+25:29 2026, which is that most of the buttons you add and most of the product services you build are probably more for the human than they are for the model. And this is an interesting shift in how we
+
+25:41 build technology, right? Like in the past, we've usually built buttons for the benefit of the computer. And the human was just there to provide information so the computer could do
+
+25:49 things. Now, we're actually doing it the other way around. Um, and I'll give you one one quick example. We've recently launched a feature called dispatch which allows you from your phone to talk to
+
+26:01 claude on your computer. As a very conscious choice, we decided not to add too many buttons. So, one of the pieces of feedback I got on social media the most easily got 50 messages every single
+
+26:11 day from people asking me, hey, it would be cool if dispatch could access my local files. That would be really nice. Like, can you can you find a way so that it can attach a folder? I mentioned this
+
+26:22 because cloud can access all your files and folders. The way this currently works is that you ask Claude, hey, can you also see my downloads folder? Claude will say, yeah, I can see it. Do you
+
+26:31 give me permission to interact with your downloads folder? And once granted, it will go. So, we're debating, do we add a button? Do we add a button so that the user knows that cloud is capable of
+
+26:41 something? And to answer your question here about trust, I think the way we've thought about trust is like less about claude proving itself to the human and more so slowly educating
+
+26:56 and helping the users in their sophistication journey by taking them by the hand and starting really small. When we first released co-work, it could already do like fairly impressive
+
+27:07 things, right? It could like write a 200page VC report for you. You could ask it to like start protein synthesis and modeling. You could ask it to like design complex architectural drawings.
+
+27:18 Um, but the thing that resonated most with people was clean up my desktop. A menial task for AI, right? You do not need claw to help you clean up your desktop. Completely unnecessary. Um, and
+
+27:30 I think the second piece that also really resonated with people was schedule tasks, which again, like from a technology point of view, it's not a big innovation. Like we've known how to like
+
+27:40 run a function in 5 minutes rather than right now for a long time. But what we're teaching people here is you start with a little task. You see claw do that well. You then slowly grow the task,
+
+27:52 right? Like humans fairly independently well after seeing like a small task work increasingly offload more and more work. And then with schedule tasks you teach them it's
+
+28:05 actually okay if you don't watch this thing. Yeah, like you don't need to like supervise. You don't need to sit in front of your computer and watch Claude do a thing. You can just ask it to
+
+28:14 review your meetings every single day and write you a report. You can just have it do that. It will send you an email once it's done. You don't need to be involved. And I think on this
+
+28:24 journey, we're slowly trying to teach people more and more what the capabilities are and how to integrate them into their life. And I think that's fundamentally where the trust comes
+
+28:33 from, right? like trust is really built on top of Claude promising a particular output, that output actually being good and you not having needed to either babysit it
+
+28:43 or intervene in some way. Would you say that uh UX is as important to the success of an AI agent as the technology itself? Like how you take users on a journey uh so that they are empowered
+
+29:00 and uh if so what what are some other lessons learned building AI agents from a UX standpoint? >> It's a really good question because I actually think I actually think that's
+
+29:10 true. I do think the UX matters quite a bit, right? Like even if you go back to our one of our most popular products cla um the very genesis of it was what if cla but instead of like in the cloud
+
+29:23 it's running on your computer in your terminal that that is almost entirely UX it's the same model it's the same core capabilities um it's really all around what is the
+
+29:32 user experience and like how do you interact with the model right but it's fundamentally the same model and that's really where a lot of the a lot of the benefits came from and I think similarly
+
+29:40 today um the AI products I see resonate with people the most are rarely the ones that deliver the most raw potential, the most raw power. Um, and I I would actually go one step further and say
+
+29:53 this is probably true not just with AI, but maybe with software overall, right? Like um I'm going to blindly assume that plenty of startups out there offer email with more features than Gmail.
+
+30:06 There's there's plenty of companies that try to like sort of jump ahead by offering a larger amount of features or more buttons or like more capabilities. Um I often think a lot about the um
+
+30:19 the silly times of mobile phones right before the smartphone was invented, right? All the things that people bolted onto phones. We had like phones with projectors, phones with like included
+
+30:30 game pads. like um a phone that didn't have a keyboard, phones with full keyboards. Um and in the end, in the end, I think technology that works really well is
+
+30:40 like often more about the things that you take away rather than the things you add. It's more about like how what does it feel like? And to this day, I'm not convinced that most people buy a phone
+
+30:50 on the basis of a spec sheet. I could be wrong. I'm like completely making this up, but I'm having the feeling that most phones are bought for reasons other than what are the specific chip capabilities.
+
+31:02 And I think AI probably works a very similar way. Like obviously a very powerful model gives you a bit of an edge. I'm not going to lie that like it's probably much easier for me to
+
+31:11 build a good AI product because I work very closely with researchers and we have amazing models inside the company. But at the end of the day, if someone beats me, Felix at like building very
+
+31:22 good products, I suspect it's going to be not because they built a better model, but likely because they figured out a better user experience. >> And so, how do you improve the user
+
+31:30 experience very practically? Like you guys look at uh what people do. So you you mentioned you talk to customers uh fairly often, but do you track uh very precisely what what people do, what what
+
+31:42 works, what doesn't work, and then uh spend more time on key use cases. How does that work? >> I think I think what we do is probably not super unique. Um there's there's one
+
+31:53 thing that is new to me. So I'm first going to say the things that like a lot of the listeners are probably going to say, "Ah, yes, of course." And those are pretty radical obsession with users,
+
+32:01 right? Like build for actual real humans that you talk to a lot. try to try to prefer iteration over like these longunning plans. We tend to plan not more than a month out. We try to be like
+
+32:13 fairly quick and how quickly we ship and also how quickly we iterate. >> The entire road map for core work is one month. >> Yeah. At at most.
+
+32:20 >> Amazing. >> Because we sort of like we we constantly think about okay what does this look like next week? What does it look like the week after? Our confidence that we
+
+32:28 can like sort of all disappear into a room and envision the best product for most people out there the way it looks like in a year is pretty low. Yeah. >> And in fact, I would like argue that no
+
+32:37 one ought to have that confidence. If anyone tells me I know what AI looks like next year, I'm >> Yeah. >> not going to be very impressed. Um
+
+32:45 >> maybe some VCs will >> maybe maybe. But I I certainly don't have the confidence. And I think anything I've ever built that became very good became very good because I had
+
+32:56 many opportunities to course correct. Had many opportunities to be a little wrong. And like many opportunities to figure out, okay, which one of these three works better? The thing that is
+
+33:04 new is that execution is essentially free, right? Like I can build if if you come to me with 10 different ideas, I can very quickly say let's do all 10. Let's try all 10, see which one we like
+
+33:18 more, which one feels better. Um, we try to do most of our testing inhouse. We try to not abuse our customers as like sort of free beta testers. Um, but I think with most products, you very
+
+33:30 quickly know whether or not it's like roughly going the right direction or not. Like that that feeling comes very very quickly. As a company now, we've grown quite a bit. We have a decent
+
+33:39 amount of employees. It's like fairly easy for us to figure out does this resonate with more than five people or not. And this rapid speed of execution is like really what's new, right?
+
+33:48 Because previously, even like two years ago, if you wanted that rapid iteration, it required a very aggressive focus in which which things you pick because you can only iterate so
+
+33:59 quickly with only a few things at a time. And now that execution is becoming so cheap, you can iterate with things like you can go deep and broad at the same time. And
+
+34:10 that's honestly like wild to witness. So, so just to play it back, so you're saying that you'll you'll actually create 10 products or 10 versions of the product actually running and then you'll
+
+34:20 have people at anthropic test and and and sort of guide which one you should eventually pick. >> We probably have easily 100 different prototypes of like various applications
+
+34:30 inside the company. Right now, none of them have necessarily yet hit the confidence of like this is good enough to show to a user. But the amount of prototypes you can build internally very
+
+34:38 very quickly completely dwarfs anything I've done in the past because of the cost of execution right like in the past the thing that would always hold you back is you know for me as the
+
+34:46 engineering leader um if you had a good idea you would come to me and I would tell you oh we can work on this next month it's going to take us three weeks until then like go and talk to the
+
+34:55 customer validate your ideas and now you can come to me and say oh I have an idea and I like cool give me 10 minutes I'll send you something and and that is that is It's like going from the painting to
+
+35:07 to the photograph, you know. >> Fascinating. So, what becomes the bottleneck then? Then you have a 100 prototypes and then you need to to pick one and then somebody needs to do that.
+
+35:19 Is that is that where things slow down? >> Yeah, I think the alignment piece is still pretty hard. The alignment piece has always been hard for anyone anywhere, right? Like as a company, if
+
+35:29 you have people with competing ideas, who do you pick? How do you pick? How do you figure out how to take the best ideas from some things and combine them into another? That's probably a
+
+35:37 bottleneck because this is where the most humans are still active. This is where human taste comes in. Is taste the new fundamental uh ability that that people need to have? I mean, that's
+
+35:47 certainly a word that's come back on this podcast many times. Is that what you're what you're seeing? >> Yeah, I think it's probably becoming more important than it maybe has been in
+
+35:56 the past. >> That's in contrast to what we were saying a second ago, right? like you you you'll you'll test things, you'll see what users do, but like ultimately
+
+36:04 that's a combination of like datadriven approaches and and something that's much more intangible. >> Yeah, I think the datadriven approach really helps you in like trying to
+
+36:11 figure out whether or not your taste actually resonates with people, right? And like whether or not you're going in the right direction. And I think for most people, even the ones that we hold
+
+36:19 in very high regards when it comes to taste, sort of like the initial people had the first versions of the iPhone, um, even they speak very highly of this this this notion of iteration and
+
+36:29 testing all the time. Like Ken Coena has written this beautiful book called Creative Selection that I think many people have maybe read before that talks about this combination of like you need
+
+36:38 to have a lot of taste, but then we need to validate it. I do think it's both. And when it comes to software in particular, I'm kind of wondering how far away we are from a world where
+
+36:46 software maybe feels a lot like say the fashion industry. And I think phones are already kind of there. There's sort of like a baseline of quality and a baseline of features that you might like
+
+36:57 look towards, right? Like for performance clothing, you might there might be more secret sauce and like how you actually make the thing, but otherwise for people who build products,
+
+37:07 um it really matters what kind of story you tell about the thing. um what kind of like onboarding you can give people, how you make people feel when they use the product. I think those things will
+
+37:19 probably be bigger differentiators than than the actual raw capabilities inside. How does that work in the context of of core work? Putting myself in your shoes. Uh you you have the unique challenge of
+
+37:32 maybe not unique but you certainly have the challenge uh of addressing a a broad group of professionals, you know, smart people that are good at their jobs or trying to be good at their jobs and some
+
+37:44 of them will be uh doing uh revenue ops, some of them will be doing marketing, some of them will be lawyers, some of them will be accountants. What does taste mean in a context where you have
+
+37:53 such a a broad audience and how do you uh test for it? >> Yeah, I think I think a lot about I've been mentioning it so much already in our conversation. I feel like almost
+
+38:03 silly about it, but I think a lot about the phone and how all of us start with the same phone, but like no two phones are the same. The exact apps you have installed probably makes your phone like
+
+38:12 unique among all the phones on the planet. Um it's almost like a fingerprint. Same with my phone. We all start with a device that probably looks very similar to the other devices, but
+
+38:21 then the way it integrates itself into our lives, is not always good, not always bad, but certainly very unique and certainly very personalized. And I think for co-work,
+
+38:32 our approach is similar that we want something that generalizes extremely well that we can apply to your life across a broad range of applications. Um, and maybe just speaking from my
+
+38:45 personal life, currently in the process of moving and moving my family into into a different house. Um, and as many people certainly certainly the ones who are also listening in America know that
+
+38:56 involves about 500 pages with a lot of words that I barely understand. Co-work here is extremely helpful, but it's also extremely helpful in like healthcare scenarios. Just had a daughter this year
+
+39:06 and working through all of that paperwork has been super helpful for me too. But these are two wildly different things, right? One of them is like mortgage applications and like
+
+39:14 negotiating with movers and like figuring out various financial applications and the other one is like much more healthcare. In theory, those are two completely different
+
+39:23 applications of the same underlying technology. But I'm noticing that the primitives that I think about are kind of the same. And like some of those primitives are a little better. Some of
+
+39:32 them feel a little better in my hand. And I think if you pay close attention as a person who's building things, if you use your own stuff a lot, you can sort of like feel when you're bumping
+
+39:39 into the software and it's not making you fly. And I want to create more and more instances where I can fly. And I can then validate with customers that even if they might be working in
+
+39:50 industries that I barely understand, I have no idea how they work, I can sort of tell from their stories how they're using it, what makes them fly and what really slows them down. And if you lean
+
+40:00 into those and you like just aggressively try to like enable that feeling of you're becoming more productive, you're going into you you're in flow, you feel like this thing is
+
+40:09 taking over work that you find annoying. I think there's a lot of value to be found there. >> Just looking back on the journey, which at the end of the day is a 5 months,
+
+40:17 what four months old journey, it's insane the impact that that you've had in such a short period of time. What was the hardest part? >> I'm thinking about your question through
+
+40:25 the lens of like what is the hardest to replicate? Right? Like if you if you told me okay now do it again do it with another product like what would be the most difficult to replicate
+
+40:34 I think there's probably something about a point in time and I mentioned that co-work sort of came on the heels of us like keeping our ear to the ground and saying oh there's
+
+40:43 something here this latent demand latent demand is a gift I don't think it's I don't think you can you can go and try to look for it you can try to find it but it's very hard to create out of
+
+40:54 nothing recreating that would probably be the hardest thing. Now, I do think software has always had ample latent demand. Like if you if you looked for it, you could always find it quite a
+
+41:06 bit. That's that's certainly one thing that is that I think is hard to like replicate. In terms of actually building core work, I would not say that anything was particularly hard. I think the
+
+41:15 things that are hard about building good products remain hard, right? Like you there sort of like the perils of success. It's like what do you do if right like you open up a cafe and
+
+41:25 instead of 10 people 20 million people show up what do you do? Um that's that's that that was probably at times sometimes hard for us and like remains a challenge the overwhelming demand for
+
+41:37 anthropics products. I'm I'm probably going to be the last one to actually complain about people wanting to use my products. >> Any other lessons come to mind? So if
+
+41:47 I'm listening to this and I'm building an AI agent of of some sort um about the process like building that harness and specializing it and it could be guardrails or it could be like industry
+
+41:59 specialization any any thing that people uh could learn. >> I would probably recommend first not to actually build your not to build too much of your own infrastructure and use
+
+42:08 a product that we've launched today called cloud managed agents that make this particular case very useful. You know what I'm going to give you I'm going to give you both. I'm both going
+
+42:16 to give you the advice and the reason for building custom agents and and a lot of harnesses and trying to make a company on top of that and then I'm also going to give you the the case for the
+
+42:26 the case against is that as the models get more and more capable what I'm noticing inside my products and inside my work is that we're sort of like pulling back
+
+42:38 the edge cases we account for right and I mentioned earlier that memory is just a text file if cla needs a database ase it will make a database. Those are all arguments against trying to come up with
+
+42:50 a hyper specialized product. >> Mhm. >> Right? Because the the idea would sort of be if we assume that the model doesn't need any of the special things
+
+42:57 that you as a builder can give it because it's just going to build it on the fly if it needs it, that's probably not the best precondition to like building something.
+
+43:05 However, at the same time, I think there is one one good argument for still investing in this area quite a bit and that is how far it will have to go for the rest of the industry to like truly
+
+43:16 harness this power. I think the internet is a beautiful example here. Like I think so many people work in AI always like reach for these like very shiny analogies of like what is AI? Is it the
+
+43:26 internet? Is it the invention of the steam machine? Like you can pick whatever you want, but I think there's one lesson in the internet that I find quite interesting, which is just how
+
+43:33 long it took for the internet to really transform economy. Like we're talking multiple decades between the first working browser and like you um considering Amazon one of the behemoths
+
+43:45 of retail, right? Like a lot of time has passed in between who's on top and who's of bot at the bottom of like that that list of companies to like changed quite a bit within that time. And to me that
+
+43:57 is sort of an argument for like actually to lean in a little bit and like to find some opportunities and areas where you can like apply AI in a unique and novel way. However, I would probably say that
+
+44:06 that that sort of like akin to everything I've said so far is a lot of the value you can provide will probably be less on the agent side. It will be less on the model intelligence and it
+
+44:16 will be more about how do you help people organize their work, right? How do you make that useful? So, as I listen to this, I'm reminded that um just a few weeks ago uh when uh you made what
+
+44:29 sounded like a mundane announcement uh the entire market collapsed where the press eventually called the the SAS apocalypse uh which I believe was just the addition of like something like 10
+
+44:40 or 11 files for legal and CRM and and that kind of thing. Obviously, the market will the market will do what the market will do. This is separate from you guys, but I think it gives people a
+
+44:52 sense for the just sheer importance and and just global impact of what it is that you're building with with cowwork and you know anthropic in in general. What do you say when when people ask you
+
+45:02 and I'm sure you get the question all the time? You guys did cloud code um amazing solution for developers then co-work which is for everybody else. As you just said, you just uh announced
+
+45:14 manage agents. I literally read this uh the announcement as I was walking to record this this podcast which is the ability uh to use anthropic infrastructure to build uh your own
+
+45:25 agent. What are the the areas as as you guys keep uh going uh up the stack that are left uh for the software industry uh to to build around? Yeah, I think and this is very very personal take but I've
+
+45:41 now been around like a few of these democratizing rounds where you needed less and less arcane knowledge in order to build things. I'll give you an example maybe just to make this like
+
+45:54 slightly more apt. Um many years ago I worked at Microsoft. At Microsoft I was working on this something called Electron which is like a crossplatform. It's a way to build applications that
+
+46:06 more or less work and look the same on both Windows and Mac OS. And one of the first things we used it for was Visual Studio Code, which is a code editor that has since become quite popular with
+
+46:17 people and cursor built on top of it. Various other companies are and when Visual Studio Code first was released inside the company, there was a feeling that this is a toy. This is not
+
+46:30 this is not for real developers because the real developers they need Visual Studio which is why Visual Studio Code is such a complicated long name because Microsoft also had this big application
+
+46:40 for real developers with all kinds of like really fairly advanced tooling. And what has happened since is that you just don't need to go that deep into your computer anymore. like to the to the
+
+46:50 people who are listening um who do work in software like I I reminisced this week that the amount of times I had to look at assembly this year was zero. Over the last five years it has not been
+
+47:05 zero. I've looked at assembly at least once but it's becoming very rare. Like it's not really a thing I look at anymore. And another thing that has happened is
+
+47:14 that Margaret Atwood, the author, has has published a beautiful piece on on talking to Clo and using using Claude. I'm kind of wondering what like software made by Margaret Edward would look like
+
+47:27 if she was to make it and I think it would be quite interesting to me and I'm pretty sure I would install it and at least use it once. And similarly, I think my prediction is going to be that
+
+47:38 we are going to have a lot more software. that software is probably going to be slightly more specialized. I don't think everyone is going to build their own software. I think people will
+
+47:47 still build things and like share them with others and others will still like to use good software that feels good. But I think the the skills required to do that will shift slightly from
+
+47:59 you know just being someone who speaks the computer's language and will shift much more towards being someone who speaks human language like now sort of built for humans. And to double click on
+
+48:08 that um what does that mean? You mentioned uh like understanding what was the term you used a minute ago understanding your uh industry and your users and now you mentioning the the
+
+48:20 human aspect is so is that a question of UX to the earlier discussion how does that manifest >> like I think I think successful software developers 20 years ago were very good
+
+48:29 at understanding computers right like in order to build successful software you need to be very good at computer you were a computer expert and I think the people who build successful software
+
+48:39 going forward will increasingly understand humans and users very well. And I think this has been a gradient. This has already happened somewhat, right? Like building software 10 years
+
+48:48 ago was already much easier than 30 years ago. And I think AI is another step function change. When it comes to the market, I am not an economist. I'm a software engineer.
+
+49:00 I've never fully understood what the markets do. Um, and I would recommend to other software engineers not to like base too much of what they do on what the markets do. That is my personal
+
+49:12 recommendation. But I I really do think like to answer your specific question, what is left to do? I think there's there's mountains upon mountains of like things we can automate for people, work
+
+49:21 we can make easier for people, problems we can solve. I think as long as humans have questions and problems, like the software will be a reasonable answer. Taking a step back, where do you think
+
+49:32 things are going in terms of agent capabilities? At the very beginning of this conversation, we talked about, you know, a extraordinary impressive new model and things seem to just like keep
+
+49:44 accelerating and realizing that your road map is one month, but what do you think agents will be uh capable of doing uh in in in a couple of years? You see, this is tricky for me because I I
+
+49:56 on principle don't like to vaguely promise abilities or features before they actually exist. Um, my marketing philosophy has always been build something cool and then show it to
+
+50:07 people. One thing that I find confusing, I don't have a good answer for is that people everywhere seem to very quickly forget how far we've come in AI and seem to sort of like be
+
+50:19 expecting that a plateau is going to come sometime soon. And I think it's probably because like technology has sort of like taught them that, right? Like we've gotten the iPhone and for a
+
+50:28 while every single year of a new iPhone was like a big change and like for the last couple of years maybe it was like less big of a change. As someone observing AI, I have no reason to assume
+
+50:37 that that is happening to AI anytime soon. I'd like to remind people that it's been a single number of years for since AI has learned how to form sentences that make any sense. Now we
+
+50:49 have AI building entire applications. We're having it solving complex problems. And to me, this is just like this is not the this is not the tip of the mountain, right? We're not there
+
+51:00 yet. We're just like this is part of the journey. We have reasons to believe the journey is accelerating. So the the steps are going to get bigger and bigger. And I
+
+51:08 think mythos preview is actually a pretty good argument for this is not just a theory. Like the models will get smarter and smarter. And we currently have no reason to believe that it ends
+
+51:19 inside. >> And again fully realizing that your road map is is is short like any kind of like area that um you guys are are focused on that you could talk about. Um speaking
+
+51:29 for ourselves, one question we're curious about is uh whether you're going to u enable regulated industries to uh have better easier access to co-work uh because as venture capital firm um uh we
+
+51:46 don't have access to co works. I have access to co-work in my personal life but uh not not at work. Is there a road map for that? >> What I'm going to say is that you're not
+
+51:54 the only one who's asking for co-work for the particular regulated industry. Um it's something we hear quite a bit and whenever users ask for something um we listen very carefully. Uh
+
+52:07 right that's fundamentally our job. Um I can't I can't particularly like comment on anything that we're currently working on but I can sort of mention like the general concept of things that I'm still
+
+52:16 excited about. And the general concept of things that I'm very very excited about still in 2026 is really the idea of helping people organize their work in a way that like makes most use of the
+
+52:27 capabilities in AI. Um, and if people are sort of like listening to that like what does that mean? What is he talking about? Once upon a time I I spent 5 years working at a company called Slack.
+
+52:37 And Slack at the time was we certainly felt like we were helping some companies revolutionize the way they work, but we were certainly not the first chat app and we were also not the first company
+
+52:48 to tell you that like your company will be more effective if you don't have all of these information silos. But very similarly there huge part of the thing that we sold people was not just a chat
+
+52:59 application. It was like this different way of working like a more transparent more open way of working. And for AI, there's a similar change in this tool is most effective if you if you examine how
+
+53:13 you do work and you like think a little bit about like what kind of pieces you can easily give away to the model and which kind of pieces you want to have full control over. That area is
+
+53:20 something I'm pretty excited about. The second area I'm excited about is um we see there's sort of like two kinds of people who currently use AI. as people who are as we call them like very AGI
+
+53:31 pilled people who sort of go all in and and are excited and spend a decent amount of time thinking about how do I set up my clot? What kind of tools do I give it access to? What kind of MCP
+
+53:41 connectors do I install? They sort of end up flying, right? And they're very effective, very productive. And then there's people who like either don't care as much or like are not interested
+
+53:50 enough or just don't have the time to like set up all of those things. How do I reduce the amount of time you need to become one of those power users is like something I'm pretty excited about and
+
+54:00 the potential there I think is still very very large. So in practice if you are a co-work user you will probably continue to see fairly meaningful changes shipping every single week quite
+
+54:10 a bit. Um there's really no end in sight. I think >> I'd love to close with some hot takes if you're willing. >> Okay, that sounds fun.
+
+54:20 >> What is one idea that is underrated? Mhm. MCP connectors are underrated because we correctly, me included, a lot of us have moved from MCPs to CLIs, but there is a lot of things that are quite
+
+54:33 inherently good about separating the data from the I want to say the execution engine. This is a very technical take um but it's like one that I engage with people over quite a bit.
+
+54:44 sort of MCP has has kind kind of been like the really hot thing last fall and we're not talking about it all that much right now but I think for most people out there MCPS are going to be like
+
+54:54 quite useful um at the end of the year and next year and I think that's sort of the same way that maybe websockets are useful to people who go to Amazon or Tik Tok MCPs are protocol and users
+
+55:04 shouldn't care but I think engineers don't care enough about MCPS >> what is one idea that is overhyped >> good question you'd think this would be easier for me to answer because like I
+
+55:14 work in AI and like we certainly have our fair share of hype everywhere. Um I Okay, I I have a hot take for you. Not every product needs a chat. >> This might be a fairly spicy take in AI
+
+55:30 in 2026. >> Meaning what? Not not everybody needs uh to be conversing or not every product needs to have AI built into it. >> I think AI can probably help with most
+
+55:39 software products. I think that is right. But I think many of my fellow software engineers have a knee-jerk reaction, which is, "Oh, you want me to put AI into my company and and into my
+
+55:50 product." That means there's a sidebar on the right with a chat input at the bottom. And I would encourage my fellow AI builders to like think one turn, one one
+
+56:02 more turn like how do you make this thing useful? >> If you were starting from scratch today, what would you work on? Yeah, if you told me tomorrow, Felix, you don't you
+
+56:12 don't get to work with any of your friends. You have to do it alone. What do you do? I would probably go after the long tale of the industry, by which I mean like there's a bunch of Windows 7
+
+56:21 devices out there in the world that are doing menial tasks and have a loadbearing role in our society. It's kind of terrifying if you think about it, but the amount of computers that are
+
+56:32 completely out of reach for any of the modern AI that are doing important work in our society is staggering. And I would probably think about that. The the other area I would push into is if you
+
+56:44 are somewhat convinced by the idea that um artificial intelligence as a concept, right? The idea of like computers is not just executing pre predetermined functions but like nondeterministically
+
+56:54 making decisions and executing on those on your behalf. Um I would probably push into the physical world and that might be my recommendation for young people. I think we're still so early. Like I
+
+57:05 really think we're so early. It is such early days for AI, for the products that exist in AI. And um I think a thing I tell a lot of my colleagues is that we're really in the silly times of
+
+57:17 mobile phones. And then if we get really lucky, maybe what we're currently working on is like the Nokia 3320, like a good phone, but it's not yet the smartphone. It's not yet the iPhone.
+
+57:28 Someone is going to build the iPhone. >> Great. Well, that's a wonderful place to leave it. Felix, thank you so much. This was an amazing chat. Really appreciate it.
+
+57:37 >> Thank you, Matt, for having me on. It was so nice. >> Hi, it's Matt Turk again. Thanks for listening to this episode of the Mad Podcast. If you enjoyed it, we'd be very
+
+57:46 grateful if you would consider subscribing if you haven't already or leaving a positive review or comment on whichever platform you're watching this or listening to this episode from. This
+
+57:55 really helps us build a podcast and get great guests. Thanks, and see you at the next episode.
